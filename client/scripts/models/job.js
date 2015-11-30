@@ -5,7 +5,7 @@ Lancealot.Job = Backbone.Model.extend({
   id: null,
 
   navigateToView: function() {
-    Backbone.history.navigate('/job/' + this.get('id'), true);
+    Backbone.history.navigate('/job?id=' + this.get('id'), true);
   },
 
   initialize: function() {
